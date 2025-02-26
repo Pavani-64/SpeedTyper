@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Typing Speed Test</h1>
+            <p>Test your typing speed and accuracy in real-time!</p>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="quote-display" id="quote-display">
+            Click <span class="highlight">Start</span> to begin the test.
+        </div>
+        <textarea id="quote-input" placeholder="Start typing here..." disabled></textarea>
+        <div class="stats">
+            <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span class="stat-label">Time</span>
+                <span class="stat-value" id="time">0s</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-tachometer-alt"></i>
+                <span class="stat-label">Speed</span>
+                <span class="stat-value" id="speed">0 WPM</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-bullseye"></i>
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value" id="accuracy">0%</span>
+            </div>
+        </div>
+        <button id="start-btn">Start</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

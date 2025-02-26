@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #05314f,#124ea2, #48d1a8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: 90%;
+    max-height: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: #ff9f43;
+    transition: width 0.3s ease;
+}
+
+.quote-display {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    line-height: 1.6;
+    min-height: 120px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.highlight {
+    color: #ff9f43;
+    font-weight: 600;
+    display: inline; /* Ensure the span stays inline */
+}   
+
+#quote-input {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    resize: none;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#quote-input:focus {
+    border-color: #ff9f43;
+    outline: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff9f43;
+}
+
+#start-btn {
+    background: #ff9f43;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+#start-btn:hover {
+    background: #ff7f00;
+}
+
+#start-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff9f43;
+}
+
+.correct {
+    color: #4caf50; /* Green for correct letters */
+}
+
+.incorrect {
+    color: #ff5252; /* Red for incorrect letters */
+}
+
